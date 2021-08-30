@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ENIC_scoring>
+	<!--Path to the subjects data excel file-->
+	<input_file>data\q_p.xlsx</input_file>
+	<!--Path to output folder, to SPSS output. If empty will output to the current folder. Don't delete the tag-->
+	<output_folder></output_folder>
+	<!--Age in months column in excel-style name. Relevant for Conners questionnaire. Don't delete the tag-->-->
+	<age_col>UQ</age_col> 
+	<!--Gender (M/F) column in excel-style name. Relevant for Conners, RCADS-P questionnaires. Don't delete the tag-->-->
+	<gender_col>UO</gender_col>
+	<!--Grades column in excel-style name. Relevant for RCADS-P questionnaires. Don't delete the tag-->-->
+	<grade_col>UN</grade_col>
+	<!--Column in excel-style name with the information about the person who filled out the Brief-P questionnaire - teacher\ parent. Don't delete the tag-->-->
+	<brief_guardian_col>UP</brief_guardian_col>
+	<!--For each questionnaire enter the begin column and end column in excel style name. Do not leave empty questionnaires-->
+	<questionnaire_params>
+		<PRFC>	
+			<begin_col>AB</begin_col>
+			<end_col>AS</end_col>
+		</PRFC>
+		<AIMS>
+			<begin_col>AT</begin_col>
+			<end_col>BM</end_col>
+		</AIMS>
+		<AIMSCon>
+			<begin_col>BN</begin_col>
+			<end_col>CG</end_col>
+		</AIMSCon>
+		<Stai>
+			<begin_col>CH</begin_col>
+			<end_col>DU</end_col>
+		</Stai>
+		<STIMQ>
+			<begin_col>DV</begin_col>
+			<end_col>ED</end_col>
+		</STIMQ>
+		<BeckDepression>
+			<begin_col>EE</begin_col>
+			<end_col>EY</end_col>
+		</BeckDepression>
+		<RCADS_P>
+			<begin_col>FA</begin_col>
+			<end_col>GU</end_col>
+		</RCADS_P>
+		<Conners>
+			<begin_col>GV</begin_col>
+			<end_col>HE</end_col>
+		</Conners>
+		<ScreenQ>
+			<begin_col>HF</begin_col>
+			<end_col>HY</end_col>
+		</ScreenQ>
+		<CoronaEnxiety>
+			<begin_col>UE</begin_col>
+			<end_col>UM</end_col>
+		</CoronaEnxiety>
+		<Brief_P>
+			<begin_col>HZ</begin_col>
+			<end_col>LG</end_col>
+		</Brief_P>
+		<Brief_A>
+			<begin_col>LH</begin_col>
+			<end_col>OD</end_col>
+		</Brief_A>
+		<CBCL>
+			<begin_col>OE</begin_col>
+			<end_col>UD</end_col>
+		</CBCL>
+	</questionnaire_params>
+</ENIC_scoring>
