@@ -6,7 +6,6 @@ setuptools.setup(
     version = "0.1",
     author="Victoria Khalfin Fekson",
     author_email="skhalfin@campus.technion.ac.il",
-    packages=['ENIC_gradings'],
     install_requires=['pyreadstat','lxml','beautifulsoup4','pandas'],
     classifiers=(
         "Programming Language :: Python :: 3",
