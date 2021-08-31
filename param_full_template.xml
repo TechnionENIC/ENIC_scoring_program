@@ -10,8 +10,6 @@
 	<gender_col>UO</gender_col>
 	<!--Grades column in excel-style name. Relevant for RCADS-P questionnaires. Don't delete the tag-->-->
 	<grade_col>UN</grade_col>
-	<!--Column in excel-style name with the information about the person who filled out the Brief-P questionnaire - teacher\ parent. Don't delete the tag-->-->
-	<brief_guardian_col>UP</brief_guardian_col>
 	<!--For each questionnaire enter the begin column and end column in excel style name. Do not leave empty questionnaires-->
 	<questionnaire_params>
 		<PRFC>	
@@ -54,10 +52,6 @@
 			<begin_col>UE</begin_col>
 			<end_col>UM</end_col>
 		</CoronaEnxiety>
-		<Brief_P>
-			<begin_col>HZ</begin_col>
-			<end_col>LG</end_col>
-		</Brief_P>
 		<Brief_A>
 			<begin_col>LH</begin_col>
 			<end_col>OD</end_col>
