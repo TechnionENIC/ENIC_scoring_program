@@ -14,7 +14,7 @@ from Questionnaires.STIMQ import STIMQ
 from Questionnaires.RCADS_P import RCADS_P
 from Questionnaires.CoronaEnxiety import CoronaEnxiety
 from Questionnaires.Conners import Conners
-from Questionnaires.Brief_P import Brief_P
+from Questionnaires.Brief_by_Parent import Brief_by_Parent
 from Questionnaires.Brief_A import Brief_A
 from Questionnaires.CBCL import CBCL
 
@@ -124,7 +124,6 @@ if __name__ == "__main__":
 	age_col = q_data.find('age_col').string
 	gender_col = q_data.find('gender_col').string
 	grade_col = q_data.find('grade_col').string
-	brief_guardian_col = q_data.find('brief_guardian_col').string
 	questionnaire_params = q_data.find('questionnaire_params')
 	
  
@@ -166,12 +165,6 @@ if __name__ == "__main__":
 			age_col_years = df_data[age_col].apply(age_months_to_year)
 			#Convert string to class
 			q_class = getattr(sys.modules[__name__], q.name)(df_data[list_of_letters(begin_col, end_col)], age_col_years, df_data[gender_col])
-		elif (q.name == "Brief_P"):
-			if (brief_guardian_col == None):
-				print("!!!Insert guardian column!!!\n")
-				continue
-			#Convert string to class
-			q_class = getattr(sys.modules[__name__], q.name)(df_data[list_of_letters(begin_col, end_col)], df_data[brief_guardian_col])
 		else:
 			q_class = getattr(sys.modules[__name__], q.name)(df_data[list_of_letters(begin_col, end_col)])
 		if(q_class is not None):
