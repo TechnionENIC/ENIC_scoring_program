@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ENIC_scoring>
 	<!--Path to the subjects data excel file-->
-	<input_file>q_p.xlsx</input_file>
+	<input_file>data_example\q_p.xlsx</input_file>
 	<!--Path to output folder, to SPSS output. If empty will output to the current folder. Don't delete the tag-->
 	<output_folder></output_folder>
 	<!--Age in months column in excel-style name. Relevant for Conners questionnaire. Don't delete the tag-->-->
